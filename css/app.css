@@ -1,4 +1,10 @@
 .boxHelper{
   background-color: black;
   color: white;
+  text-align: center;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 10px; 
+
 }
