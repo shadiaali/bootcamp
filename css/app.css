@@ -6,8 +6,52 @@
   font-size: 15px;
   font-weight: bold;
   padding-top: 10px;
+  margin-top: 30px;
 
 }
+
+
+
+#main-menu ul li{
+  display: inline;
+  text-decoration: none;
+  font-size: 27px;
+  margin-left: 40px;
+}
+
+#mainLogo {
+  margin-top: 25px;
+}
+
+nav {
+  margin-top: 23px;
+}
+
+.menu-icon {
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+  #mainVid {
+    height: 520px;
+    background-color: black;
+  }
+
+  #vidText {
+    color: white;
+    font-size: 20px;
+  }
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
   #img3 {
@@ -16,5 +60,12 @@
 
   #img4 {
     display: none;
+  }
+
+  nav ul li{
+    display: inline;
+    text-decoration: none;
+    font-size: 27px;
+    margin-left: 40px;
   }
 }
