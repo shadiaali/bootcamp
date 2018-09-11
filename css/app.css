@@ -1,71 +1,294 @@
-.boxHelper{
+
+
+
+.boxHelper {
   background-color: black;
   color: white;
   text-align: center;
-  height: 50px;
-  font-size: 15px;
+}
+p, h3 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+div h3 {
+  font-size: 1.75em;
   font-weight: bold;
-  padding-top: 10px;
-  margin-top: 30px;
-
+}
+.menu-icon:after
+{
+   background: #5613f0;
+   box-shadow: 0 7px 0 #1128cd, 0 14px 0 #0b1d9d;
+   border-radius: 5px;
+   height: 3.5px;
+   width: 110%;
+}
+.menu-icon:hover::after
+{
+   background: #5613f0;
+   box-shadow: 0 7px 0 #5613f0, 0 14px 0 #5613f0;
+}
+.title-bar
+{
+   background-color:rgba(0,0,0,0.00);
 }
 
-
-
-#main-menu ul li{
-  display: inline;
+#main-menu li{
+  display: block;
   text-decoration: none;
-  font-size: 27px;
-  margin-left: 40px;
+  border-bottom: 1px solid grey;
+
 }
 
-#mainLogo {
-  margin-top: 25px;
+#main-menu li a {
+  font-family: "NotoSansKR", sans-serif;
+  font-weight : normal;
+  color: #0b1d9d;
 }
+#main-menu li a:hover {
+  color: #1128cd;
 
-nav {
-  margin-top: 23px;
 }
-
-.menu-icon {
-  background-color: black;
-}
-
-
-
-
-
-
-
 
   #mainVid {
-    height: 520px;
+    height: 30em;
     background-color: black;
   }
 
-  #vidText {
+  .titleText {
+    color: #1a28a0;
+  }
+
+  #popArea img {
+    margin-bottom: 0.188em;
+  }
+  .popContainer {
+    position: relative;
+  }
+
+  .popImg {
+    display: block;
+    height: auto;
+  }
+
+  .popOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #594c98;
+  }
+
+  .popContainer:hover .popOverlay {
+    opacity: 0.9;
+  }
+
+  .popText {
     color: white;
     font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+  }
+  #musArea {
+    background-color: #e2d9f5;
+  }
+
+  .musText {
+    font-size: 0.938em;
+    font-weight: bold;
+    padding-top: 1.875em;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .musBorder
+  {
+    border-style: solid;
+    border-width: .5em 1em;
+    border-color: #e2d9f5;
+    background-color: #ffffff;
+  }
+
+
+  .enterText {
+    font-size: 0.625em;
+    font-weight: bold;
+    line-height: 1.125em;
+  }
+  .entertainSlider .orbit-previous,
+  .entertainSlider .orbit-next {
+    color: #cacaca;
+  }
+
+
+  .entertainSlider .orbit-bullets button {
+    height: 0.65rem;
+    width: 0.65rem;
   }
 
 
 
-
-
-
-@media screen and (max-width: 600px) {
-  #img3 {
-    display: none;
+  #enArea img {
+    margin-bottom: 0.438em;
   }
 
-  #img4 {
-    display: none;
+
+
+  #footerbckgrd{
+    background-color: #c2d1f8;
   }
 
-  nav ul li{
-    display: inline;
+  #footerNav{
+    margin-top: 1.5em;
+  }
+
+  #footerNav ul li {
     text-decoration: none;
-    font-size: 27px;
-    margin-left: 40px;
+    display: inline;
+
   }
-}
+
+  #footerNav ul li a{
+    font-size: 1em;
+    font-family: "NotoSansKR", sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 2em;
+  }
+
+  #footerNav ul li a{
+     margin-left: 0em;
+  }
+
+  @media screen and (min-width: 64em) {
+    #main-menu li {
+      display: inline;
+      text-decoration: none;
+      font-size: 1.7em;
+      margin-left: 3em;
+      border-bottom: none;
+    }
+
+    #main-menu li a {
+      font-family: "NotoSansKR", sans-serif;
+      font-weight : bold;
+      color: #0b1d9d;
+    }
+
+    #main-menu li a:hover {
+      transition: linear 5s;
+      background-color: lightgrey;
+      border-radius: 15px;
+
+    }
+
+
+
+    #mainNav
+    {
+        margin-top: 3.9em;
+    }
+
+    #mainLogo {
+      margin-top: 1.5em;
+    }
+
+    #main-menu {
+      margin-top: 1.5em;
+    }
+
+
+      #mainVid {
+        height: 30em;
+        background-color: black;
+      }
+
+
+      h3 {
+        color: #1a28a0;
+      }
+
+      .titleText {
+          font-size: 3em;
+      }
+
+      #musArea {
+        background-color: #e2d9f5;
+        padding: 0;
+      }
+
+      #popArea img {
+        margin-bottom: 0;
+      }
+
+      .musText {
+        font-size: 1.875em;
+        font-weight: normal;
+      }
+
+      .enterText {
+        font-size: 1.75em;
+        line-height: 1em;
+      }
+
+      .botArticle {
+        margin-top: 1.25em;
+      }
+
+      .enterText {
+        font-size: 1.313em;
+      }
+
+
+      .musBorder
+      {
+          border-width: 0em;
+          background-color: #e2d9f5;
+      }
+
+      .orbit-previous, .orbit-next
+      {
+            top: 30%;
+      }
+
+
+      #musText1, #musText2, #musText3, #musText4 {
+        padding: 1.250em;
+      }
+
+      #enArea img {
+          margin-bottom: 1.063em;
+      }
+
+      #footerbckgrd{
+        background-color: #c2d1f8;
+      }
+
+      #footerNav{
+        margin-top: 1.5em;
+      }
+
+      #footerNav ul li {
+        text-decoration: none;
+        display: inline;
+
+      }
+
+      #footerNav ul li a{
+        font-size: 1.875em;
+        font-family: "NotoSansKR", sans-serif;
+        font-weight: normal;
+        text-align: center;
+        margin-left: 1.813em;
+      }
+
+      #footerNav ul li a:last-child{
+         margin-right: 0;
+      }
+  }
