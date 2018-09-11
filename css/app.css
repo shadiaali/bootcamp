@@ -1,13 +1,15 @@
-.boxHelper{
+.boxHelper {
   background-color: black;
   color: white;
   text-align: center;
-  height: 50px;
-  font-size: 15px;
-  font-weight: bold;
-  padding-top: 10px;
-  margin-top: 30px;
+}
+p, h3 {
+  font-family: "NotoSansKR", sans-serif;
+}
 
+div h3 {
+  font-size: 1.75em;
+  font-weight: bold;
 }
 .menu-icon:after
 {
@@ -27,55 +29,47 @@
    background-color:rgba(0,0,0,0.00);
 }
 
-
 #main-menu li{
-  display: inline;
+  display: block;
   text-decoration: none;
-  font-size: 27px;
-  margin-left: 70px;
+  border-bottom: 1px solid grey;
+
 }
 
 #main-menu li a {
   font-family: "NotoSansKR", sans-serif;
-  font-weight : bold;
+  font-weight : normal;
   color: #0b1d9d;
 }
 
-#main-menu li a:last-child{
-  margin-left: 15px;
-}
-
-#mainNav
-{
-    margin-top: 52px;
-}
-
-#mainLogo {
-  margin-top: 25px;
-}
-
-#main-menu {
-  margin-top: 23px;
-}
-
-
   #mainVid {
-    height: 520px;
+    height: 30em;
     background-color: black;
   }
 
-  #vidText {
-    color: white;
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 4em;
+  .titleText {
     color: #1a28a0;
   }
 
+
+  .musText {
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.2em;
+  }
+
+  .enterText {
+    font-size: 0.833em;
+  }
+
+
+
   #footerbckgrd{
     background-color: #c2d1f8;
+  }
+
+  #footerNav{
+    margin-top: 1.5em;
   }
 
   #footerNav ul li {
@@ -85,8 +79,104 @@
   }
 
   #footerNav ul li a{
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: "NotoSansKR", sans-serif;
     font-weight: normal;
     text-align: center;
+    margin-left: 2em;
+  }
+
+  #footerNav ul li a:last-child{
+     margin-right: 0;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    #main-menu li{
+      display: inline;
+      text-decoration: none;
+      font-size: 1.7em;
+      margin-left: 3em;
+      border-bottom: none;
+    }
+
+    #main-menu li a {
+      font-family: "NotoSansKR", sans-serif;
+      font-weight : bold;
+      color: #0b1d9d;
+    }
+
+    #main-menu li a:hover {
+      transition: linear 5s;
+      background-color: lightgrey;
+      border-radius: 15px;
+
+    }
+
+
+
+    #mainNav
+    {
+        margin-top: 2.25em;
+    }
+
+    #mainLogo {
+      margin-top: 1.5em;
+    }
+
+    #main-menu {
+      margin-top: 1.5em;
+    }
+
+
+      #mainVid {
+        height: 30em;
+        background-color: black;
+      }
+
+
+      h3 {
+        color: #1a28a0;
+      }
+
+      .titleText {
+          font-size: 4em;
+      }
+
+      .musText {
+        font-size: 2em;
+        font-weight: normal;
+        margin-top: 1.75em;
+      }
+
+      .enterText {
+        font-size: 1.75em;
+        line-height: 1em;
+      }
+
+      #footerbckgrd{
+        background-color: #c2d1f8;
+      }
+
+      #footerNav{
+        margin-top: 1.5em;
+      }
+
+      #footerNav ul li {
+        text-decoration: none;
+        display: inline;
+
+      }
+
+      #footerNav ul li a{
+        font-size: 1.5em;
+        font-family: "NotoSansKR", sans-serif;
+        font-weight: normal;
+        text-align: center;
+        margin-left: 1.5em;
+      }
+
+      #footerNav ul li a:last-child{
+         margin-right: 0;
+      }
   }
