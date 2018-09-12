@@ -491,6 +491,17 @@ section
         font-size: 0.938em;
       }
 
+      .btn:hover {
+        border: 1px solid #162832;
+        transition: .5s;
+      }
+
+      #readBut:hover {
+        transition: .5s;
+        background-color: #ff9000;
+        color: #162832;
+      }
+
       #popArea img {
         -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari 6.0 - 9.0 */
         filter: drop-shadow(8px 8px 10px gray);
