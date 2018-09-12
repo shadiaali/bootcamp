@@ -1,0 +1,920 @@
+/*video section starts*/
+.controls
+{
+  text-align: center;
+	background-color: rgba(243,243,243,.8);
+  margin-top: -7px;
+
+}
+.player-button
+{
+  float: left;
+  margin-left: .5em;
+}
+
+#teaserVolControl
+{
+  vertical-align: middle;
+}
+
+.videoIcons:hover{
+	cursor: pointer;
+	-webkit-transform:scale3d(1.2, 1.25, 0.1);
+     -moz-transform:scale3d(1.2, 1.25, 0.1);
+       -o-transform:scale3d(1.2, 1.25, 0.1);
+      -ms-transform:scale3d(1.2, 1.25, 0.1);
+          transform:scale3d(1.2, 1.25, 0.1);
+}
+/*video section ends*/
+
+p, h2 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+div h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+/*Header Starts here*/
+.title-bar
+{
+ background: #ffffff;
+}
+
+img{
+  border-radius:4%;
+}
+
+.menu-icon:after
+{
+   background: #5613f0;
+   box-shadow: 0 7px 0 #1128cd, 0 14px 0 #0b1d9d;
+   border-radius: 5px;
+   height: 3.5px;
+   width: 110%;
+}
+.menu-icon:hover::after
+{
+   background: #5613f0;
+   box-shadow: 0 7px 0 #5613f0, 0 14px 0 #5613f0;
+}
+
+#main-menu li{
+  display: block;
+  text-decoration: none;
+}
+
+#main-menu li a {
+  font-family: "NotoSansKR", sans-serif;
+  font-weight : normal;
+  color: #0b1d9d;
+}
+
+#main-menu li a{
+  position: relative;
+    transition: all 2s;
+}
+
+
+#main-menu li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #0b1d9d;
+  height: 1px;
+  transition: .5s;
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+#main-menu li a:hover:after {
+  width: 100%;
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+/*Header Ends Here*/
+
+.fa, .fas {
+    margin-left:.2em;
+    margin-right:.2em;
+    padding:2px;
+}
+
+/*Title Text Starts Here*/
+.titleText {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+
+.titleText{
+  position: relative;
+  margin-bottom:.5em;
+  margin-top:1.3em;
+}
+
+.titleText:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #0b1d9d;
+    height: 1px;
+    transition: .5s;
+}
+
+.titleText:hover:after {
+    width: 100%;
+}
+
+.titleText {
+    color: #1a28a0;
+}
+/*Title Text Ends Here*/
+
+#mainVid {
+
+
+}
+
+/*Pop culture Starts Here*/
+
+#popArea img {
+    margin-bottom: 0.188em;
+}
+
+.popContainer {
+    position: relative;
+}
+
+.popImg {
+    display: block;
+    height: auto;
+}
+
+.popOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #594c98;
+    border-radius:4%;
+}
+
+.popContainer:hover .popOverlay {
+    opacity: 0.8;
+    border-radius:4%;
+
+}
+
+.popText {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+}
+/*Pop culture Ends Here*/
+
+/*Music Starts Here*/
+#musArea {
+
+}
+
+.musText {
+    font-size: 0.938em;
+    font-weight: bold;
+    padding-top: 1.875em;
+    font-family: "Nunito Sans", sans-serif;
+}
+.musBorder
+{
+    border-style: solid;
+    border-width: .5em 1em;
+    border-color: #e2d9f5;
+    background-color: #ffffff;
+    border-radius:4%;
+}
+/*Music Ends Here*/
+
+/*Entertainment Starts Here*/
+#enArea img {
+    margin-bottom: 0.438em;
+}
+
+.enterText {
+    font-size: 0.625em;
+    font-weight: bold;
+    line-height: 1.125em;
+}
+  .entertainSlider .orbit-previous,
+  .entertainSlider .orbit-next {
+    color: #cacaca;
+}
+
+
+.entertainSlider .orbit-bullets button {
+    height: 0.65rem;
+    width: 0.65rem;
+}
+/*Entertainment Ends Here*/
+
+/*Footer Starts Here*/
+
+#footerNav{
+    margin-top: 1.5em;
+    background-color:#c2d1f8;
+}
+
+#footerNav ul li {
+    text-decoration: none;
+    display: inline;
+    background-color:#c2d1f8;
+    margin-left:0.5em;
+    margin-right:0.5em;
+
+
+}
+
+#footerNav ul li a{
+    font-size: 1em;
+    font-family: "NotoSansKR", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 2em;
+    color: #fff;
+    background-color:#c2d1f8;
+
+}
+
+#footerNav ul li a{
+     margin-left: 0em;
+     background-color:#c2d1f8;
+     color:#fff;
+
+}
+
+#footerLogo{
+  background-color:#c2d1f8;
+
+}
+
+.foot{
+
+    background-color:#c2d1f8;
+
+}
+#footerLogo{
+  background-color:#c2d1f8;
+  margin-bottom:0.6em;
+  margin-top:2em;
+
+}
+/*Footer Ends Here*/
+
+/*desktop*/
+
+  @media screen and (min-width: 64em) {
+
+    #main-menu li{
+      float: right;
+    }
+
+    #main-menu li {
+      display: inline;
+      text-decoration: none;
+      font-size: 1.7em;
+      margin-left: 3em;
+      border-bottom: none;
+    }
+
+    #main-menu li a {
+      font-family: "NotoSansKR", sans-serif;
+      font-weight : bold;
+      color: #0b1d9d;
+    }
+
+    #main-menu li a:hover {
+      transition: linear 5s;
+      border-radius: 5px;
+
+    }
+
+    .fa, .fas {
+        margin-left:1em;
+        margin-right:1em;
+        padding:5px;
+    }
+
+    .controls
+    {
+      text-align: center;
+    	background-color: rgba(243,243,243,.2);
+      margin-top: -5em;}
+
+
+    #mainNav
+    {
+        margin-top: 5em;
+        text-align:right;
+        margin-left:8em;
+        margin-bottom:2em;
+
+    }
+
+    #mainLogo {
+      margin-top: 1.8em;
+      margin-left:2.5em;
+
+    }
+
+    #main-menu {
+      margin-top: 2.5em;
+    }
+
+
+img{
+  border-radius:4%;
+}
+
+
+
+      .titleText {
+          font-size: 3em;
+      }
+
+      #musArea {
+        padding: 0;
+        height: 38.125em;
+      }
+
+      #musArea div p{
+        color: white;
+        font-family: "Nunito Sans", sans-serif;
+      }
+
+      #text1 {
+        font-size: 1.875em;
+        margin-top: 1.25em;
+      }
+
+      #text2 {
+        font-size: 1.250em;
+      }
+
+      .btn {
+        text-align: center;
+        text-decoration: none;
+        font-family: "Nunito Sans", sans-serif;
+        background-color: #162832;
+      }
+
+      #readBut {
+        border: 1px solid #ff9000;
+        color: #ff9000;
+        padding: 2px 5px;
+        border-radius: 5px;
+        margin-top: 2.25em;
+        margin-bottom: 2.25em;
+        width: 2em;
+        height:2em;
+        font-size: 0.938em;
+      }
+
+      .btn:hover {
+        border: 1px solid #162832;
+        transition: .5s;
+      }
+
+      #readBut:hover {
+        transition: .5s;
+        background-color: #ff9000;
+        color: #162832;
+      }
+
+      h4{
+        font-size:1.2em;
+        color:#fff;
+        font-weight:bold;
+        margin-top:0.2em;
+
+
+      }
+
+      h4 span{
+          background-color:rgba(0, 0, 0, 0.5);
+      }
+
+      #readBut {
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 2px 5px;
+        border-radius: 5px;
+        margin-top: 2.25em;
+        margin-bottom: 2.25em;
+        width: 130px;
+        font-size: 0.938em;
+      }
+
+      #popArea img {
+        margin-bottom: 0;
+      }
+
+      .musText {
+        font-size: 1.875em;
+        font-weight: normal;
+      }
+
+      #musImgSec div p {
+        font-size: 0.813em;
+      }
+
+      .enterText {
+        font-size: 1.75em;
+        line-height: 1em;
+      }
+
+      .botArticle {
+
+      }
+
+      .enterText {
+        font-size: 1.313em;
+        font-family: "Nunito Sans", sans-serif;
+      }
+
+
+      .musBorder
+      {
+          border-width: 0em;
+      }
+
+      .orbit-previous, .orbit-next
+      {
+            top: 30%;
+      }
+
+      .musicSec {
+        background-image: url("../images/music_1.jpg");
+        background-repeat: no-repeat;
+        -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari 6.0 - 9.0 */
+        filter: drop-shadow(8px 8px 10px gray);
+        border-radius:4%;
+      }
+
+
+      #musText1, #musText2, #musText3, #musText4 {
+        padding: 1.250em;
+      }
+
+      #enArea img {
+          margin-bottom: 1.063em;
+      }
+
+      #footerbckgrd {
+         background-color: #c2d1f8;
+      }
+
+      #footerNav{
+        margin-top: 1.5em;
+        background-color: #c2d1f8;
+      }
+
+      #footerNav ul li {
+        text-decoration: none;
+        display: inline;
+        background-color:#c2d1f8;
+
+
+      }
+
+      #footerNav ul li a{
+        font-size: 1.875em;
+        font-family: "NotoSansKR", sans-serif;
+        font-weight: normal;
+        text-align: center;
+        margin-left: 1.813em;
+        color: white;
+        background-color:#c2d1f8;
+
+      }
+
+      #footerNav ul li a:last-child{
+         margin-right: 0;
+         background-color:#c2d1f8;
+
+      }
+
+      #footerLogo{
+        background-color:#c2d1f8;
+        margin-bottom:0.6em;
+        margin-top:2em;
+
+      }
+      .foot{
+
+          background-color:#c2d1f8;
+
+      }
+  }
+
+  /*Pop Culture Page starts*/
+
+  .btn {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #162832;
+  }
+
+  #readBut {
+    border: 1px solid #ff9000;
+    color: #ff9000;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 2.25em;
+    margin-bottom: 2.25em;
+    width: 130px;
+    font-size: 0.938em;
+  }
+
+  .btn:hover {
+    border: 1px solid #162832;
+    transition: .5s;
+  }
+
+  #readBut:hover {
+    transition: .5s;
+    background-color: #ff9000;
+    color: #162832;
+  }
+
+
+  .article-row-section {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .article-row-section-inner {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 100%;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-section-inner {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-section-inner {
+      -webkit-flex: 0 0 83.33333%;
+          -ms-flex: 0 0 83.33333%;
+              flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      max-width: 83.33333%;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  @media print, screen and (min-width: 40em) and (min-width: 40em) {
+    .article-row-section-inner {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  .article-row-section-header {
+    padding: 1.5rem 0;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .article-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 1px solid #e6e6e6;
+    padding: 1.5rem 0;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row {
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  .article-row-img img {
+    width: 100%;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-img img {
+      max-width: none;
+      width: auto;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  .article-row-content {
+    padding: 1.5rem 0 0;
+    color: #0a0a0a;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-content {
+      padding: 0 0 0 1.5rem;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  .article-row-content-header {
+    font-size: 2.5rem;
+  }
+
+  .article-row-content-description {
+    font-size: 1.5rem;
+  }
+
+  .article-row-content-author,
+  .article-row-content-time {
+    font-size: 1.2em;
+    margin-bottom: 0;
+    color: #000;
+    font-family:Arial;
+
+  }
+
+  .article-row-reversed .article-row-content {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0 1.5rem 0 0;
+  }
+
+  .article-row-reversed .article-row-img {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0 0 1.5rem 0;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-reversed .article-row-content {
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+    }
+    .article-row-reversed .article-row-img {
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  /*Pop Culture Page ends*/
