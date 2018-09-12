@@ -7,23 +7,22 @@
     <title>Purevolume</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
 
 
 
         <h1 class="hide">Purevolume Website</h1>
-
+      <!-- Header Starts here -->
         <header class="grid-x grid-padding-x">
 
-          <h2 class="hide">Purevolume Header</h2>
-
-          <div id="mainLogo" class="cell small-6">
-            <img src="images/logo.svg" alt="Purevolume Logo">
+        <h2 class="hide">Header</h2>
+          <div id="mainLogo" class="cell small-5">
+            <a href="index.html"><img src="images/logo.svg" alt="Purevolume Logo"></a>
           </div>
 
-          <div class="cell small-offset-4 large-offset-0 small-2 large-6 large-order-2">
-            <h2 class="hide">Main Navigation</h2>
+          <div class="cell small-offset-5 large-offset-0 small-2 large-7 large-order-2">
             <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="large">
               <div class="title-bar-right">
                 <button class="menu-icon" type="button" data-toggle="main-menu"></button>
@@ -31,35 +30,63 @@
             </div>
           </div>
           <nav id="main-menu" class="grid-x grid-padding-x">
-              <h2 class="hide">Header Navigation</h2>
-                <ul id="mainNav" class="cell small-12 large-order-1">
-                  <li><a href="#">Popculture</a></li>
-                  <li><a href="#">Music</a></li>
-                  <li><a href="#">Entertainment</a></li>
+              <h3 class="hide">Header Navigation</h3>
+                <ul id="mainNav" class="cell small-12 large-order-1 stroke">
+                  <li><a href="popCulture.html">POP CULTURE</a></li>
+                  <li><a href="#">MUSIC</a></li>
+                  <li><a href="#">ENTERTAINMENT</a></li>
                 </ul>
           </nav>
         </header>
+      <!-- Header Ends here -->
+
+      <!-- Video Starts here -->
+      <div class="grid-x grid-padding-x">
+    <div id="teaserPlayer" class="cell small-12">
+      <div class="responsive-embed">
+  <video id="teaserVideo">
+    <source src="images/demo.mp4" type="video/mp4"/>
+    <source src="video/teaser.webm" type="video/webm"/>
+    <source src="video/teaser.ogv" type="video/ogg"/>
+    Video is not supported by your browser.
+    <!-- Firefogg - converter for all video formats -->
+  </video>
+    </div>
+    <div class="grid-container">
+    <div class="controls grid-x grid-padding-x">
+      <div class="player-button cell small-1"><i id="playTeaser" class="fas fa-play videoIcons fa-2x"></i></div>
+      <div class="player-button cell small-1"><i id="restartTeaser" class="fas fa-stop videoIcons fa-2x"></i></div>
+      <div class="cell small-6 small-offset-2">
+        <div class="player-button "><i id="teaserVolumeOn" class="fas fa-volume-up videoIcons fa-2x"></i></div>
+        <div><input id="teaserVolControl" type="range" min="0" max="100" step="1"></div>
+      </div>
+      <div class="player-button cell small-1"><i id="fullscreenbtn" class="fas fa-expand fa-2x"></i></div>
+
+    </div>
+    </div>
+</div>
 
 
-        <div class="grid-x grid-padding-x">
 
-           <div id="mainVid" class="cell small-12">
-             <p id="vidText">Video</p>
-           </div>
 
-        </div>
-        <!-- Grid Container Start -->
-        <div class="grid-container">
+      </div>
+    <!-- Video Ends here -->
+
+      <!-- Grid Container Start Here -->
+      <!-- Pop Culture Starts here -->
+      <div class="grid-container">
           <div class="grid-x grid-padding-x">
-            <div class="cell small-6 large-3">
-                  <div class="centered"><h3 class="titleText">Pop culture</h3></div>
+            <div class="cell small-8 large-4">
+                  <div id="popTitle"><a href="popculture.index"><h2 class="titleText">POP CULTURE</h2></a></div>
             </div>
 
-        </div>
+      </div>
 
-        <div id="popArea" class="grid-x grid-padding-x">
+        <section id="popArea" class="grid-x grid-padding-x">
+          <h2 class="hide">Pop culture Articles</h2>
 
             <div id="img1" class="cell small-6 large-4">
+              <h3 class="hide">Pop culture Article1</h3>
               <div class="popContainer">
               <img src="images/art_img1.jpg" alt="First Article" class="popImg">
               <div class="popOverlay">
@@ -70,6 +97,7 @@
 
 
             <div class="cell small-6 large-4">
+              <h3 class="hide">Pop culture Article2</h3>
               <div class="popContainer">
               <img src="images/art_img2.jpg" alt="Second Article">
               <div class="popOverlay">
@@ -79,6 +107,7 @@
             </div>
 
             <div class="cell small-6 large-4">
+              <h3 class="hide">Pop culture Article3</h3>
               <div class="popContainer">
               <img src="images/art_img3.jpg" alt="Third Article">
               <div class="popOverlay">
@@ -88,6 +117,7 @@
             </div>
 
             <div class="cell small-6 large-4">
+              <h3 class="hide">Pop culture Article4</h3>
               <div class="popContainer">
               <img class="botArticle" src="images/art_img4.jpg" alt="Forth Article">
               <div class="popOverlay">
@@ -97,6 +127,7 @@
             </div>
 
             <div class="cell small-6 large-4">
+              <h3 class="hide">Pop culture Article5</h3>
               <div class="popContainer">
               <img class="botArticle" src="images/art_img5.jpg" alt="Fifth Article">
               <div class="popOverlay">
@@ -106,6 +137,7 @@
             </div>
 
             <div class="cell small-6 large-4">
+              <h3 class="hide">Pop culture Article6</h3>
               <div class="popContainer">
               <img class="botArticle" src="images/art_img6.jpg" alt="Sixth Article">
               <div class="popOverlay">
@@ -113,140 +145,194 @@
               </div>
               </div>
             </div>
-          </div>
+          </section>
+      <!-- Pop Culture Ends here -->
 
-
+      <!-- Music Starts here -->
         <div class="grid-x grid-padding-x">
 
           <div class="cell small-6 large-2">
-              <div><h3 class="titleText">Music</h3></div>
+              <div class="container green borderXwidth"><a href="#"><h2 id="musTitle" class="titleText">MUSIC</h2></a></div>
           </div>
         </div>
 
-        <div id="musArea" class="grid-x grid-padding-x large-padding-collapse">
+        <section id="musArea"  class="musicSec">
 
-          <div class="cell small-6 large-3">
-            <img src="images/mu_img1.jpg" alt="Music Article First Image">
+          <h2 class="hide">Music Articles</h2>
+
+          <div class="grid-x grid-padding-x">
+
+           <div class="cell large-7 show-for-large">
+             <p id="text1">Jack White: From Altar Boy To Rock God</p>
+           </div>
+
           </div>
 
-          <div class="cell small-6 large-3 musBorder">
-            <p id="musText1" class="musText">Jack White: From Altar Boy To Rock God</p>
-          </div>
+          <div class="grid-x grid-padding-x">
 
-          <div class="cell small-6 large-3">
-            <img src="images/mu_img2.jpg" alt="Music Article Second Image">
-          </div>
+           <div class="cell large-6 show-for-large">
+             <p id="text2">If you’ve ever picked up a guitar, chances are one of the first things
+               you learned to strum was the chord progression to the White Stripes
+               “Seven Nation Army.”...</p>
+           </div>
 
-          <div class="cell small-6 large-3 musBorder">
-            <p id="musText2" class="musText">These LGBTQ Artists Are Pioneers In The Music Industry</p>
-          </div>
+           </div>
 
-          <div class="cell small-6 large-3 small-order-2 large-order-1 musBorder">
-            <p id="musText3" class="musText">The Life Story Of Paul McCartney</p>
-          </div>
+           <div class="grid-x grid-padding-x">
+            <div class="cell large-2 show-for-large">
+            <button class="btn" id="readBut">Read More</button>
+            </div>
+           </div>
 
-          <div class="cell small-6 large-3 small-order-1 large-order-2">
-            <img src="images/mu_img3.jpg" alt="Music Article Third Image">
-          </div>
+           <div id="musImgSec" class="grid-x grid-padding-x">
 
-          <div class="cell small-6 large-3 small-order-4 large-order-3 musBorder">
-            <p id="musText4" class="musText">The Complicated Life Of Kurt Cobain</p>
-          </div>
+             <div class="cell large-4">
+              <img src="images/music_2.jpg" alt="Second Music Image">
+              <p>These LGBTQ Artists Are Pioneers In The Music Industry</p>
+             </div>
 
-          <div class="cell small-6 large-3 small-order-3 large-order-4">
-            <img src="images/mu_img4.jpg" alt="Music Article Forth Image">
-          </div>
+             <div class="cell large-4">
+              <img src="images/music_3.jpg" alt="Third Music Image">
+              <p>The Life Story Of Paul McCartney</p>
+             </div>
 
-        </div>
+             <div class="cell large-4">
+              <img src="images/music_4.jpg" alt="Forth Music Image">
+              <p>The Complicated Life Of Kurt Cobain</p>
+             </div>
 
+           </div>
+
+        </section>
+       <!-- Music Ends here -->
+
+       <!-- Entertainment Starts here -->
         <div class="grid-x grid-padding-x">
 
           <div class="cell small-6 large-4">
-            <div><h3 class="titleText">Entertainment</h3></div>
+            <div><a href="#"><h2 class="titleText">ENTERTAINMENT</h2></a></div>
           </div>
 
         </div>
 
         <div class="entertainSlider orbit" role="region" aria-label="Favorite Space Pictures" data-orbit data-options="data-timer-delay:0; data-auto-play:false;">
-          <div class="grid-container">
-            <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-            <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-            <div class="is-active orbit-slide">
-              <div class="grid-x grid-padding-x small-up-2 large-up-4 align-center">
+        <!-- Image Slides start here -->
+        <section class="grid-container">
 
-                <div class="cell">
-                  <img src="images/En_image1.jpg" alt="Entertainment Article First Image">
-                  <p class="enterText">Drake’s Charmed Life: The Tough Times And Successes Of Aubrey Graham</p>
-                </div>
+          <h2 class="hide">Entertainment Articles</h2>
+        <!-- Entertainment Grid contanainer Starts here -->
+        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 
-                <div class="cell">
-                  <img src="images/En_image2.jpg" alt="Entertainment Article Second Image">
-                  <p class="enterText">The Next Generation Of Stars Taking Over Hollywood</p>
-                </div>
+        <div class="is-active orbit-slide">
 
-                <div class="cell">
-                  <img src="images/En_image3.jpg" alt="Entertainment Article Third Image">
-                  <p class="enterText">Hilariously Bad Celebrity Photo Fails That Should Have Never Happened</p>
-                </div>
-                <div class="cell">
-                  <img src="images/En_image4.jpg" alt="Entertainment Article Forth Image">
-                  <p class="enterText">From Kimye To The Beckhams, Here’s How Your Favorite Celebrity Couples Met</p>
-                  </div>
-              </div>
+        <div class="grid-x grid-padding-x small-up-2 large-up-4 align-center large-padding-collapse">
 
+        <div class="cell">
+        <img src="images/En_image1.jpg" alt="Entertainment Article First Image">
+        <h3 class="enterText">Drake’s Charmed Life: The Tough Times And Successes Of Aubrey Graham</h3>
+        </div>
 
-            </div>
-            <div class="is-active orbit-slide">
-              <div class="grid-x grid-padding-x small-up-2 large-up-4 align-center">
+        <div class="cell">
+        <img src="images/En_image2.jpg" alt="Entertainment Article Second Image">
+        <h3 class="enterText">The Next Generation Of Stars Taking Over Hollywood</h3>
+        </div>
 
-                <div class="cell">
-                  <img src="images/En_image1.jpg" alt="Entertainment Article First Image">
-                  <p class="enterText">Drake’s Charmed Life: The Tough Times And Successes Of Aubrey Graham</p>
-                </div>
+        <div class="cell">
+        <img src="images/En_image3.jpg" alt="Entertainment Article Third Image">
+        <h3 class="enterText">Hilariously Bad Celebrity Photo Fails That Should Have Never Happened</h3>
+        </div>
 
-                <div class="cell">
-                  <img src="images/En_image2.jpg" alt="Entertainment Article Second Image">
-                  <p class="enterText">The Next Generation Of Stars Taking Over Hollywood</p>
-                </div>
+        <div class="cell">
+        <img src="images/En_image4.jpg" alt="Entertainment Article Forth Image">
+        <h3 class="enterText">From Kimye To The Beckhams, Here’s How Your Favorite Celebrity Couples Met</h3>
+        </div>
 
-                <div class="cell">
-                  <img src="images/En_image3.jpg" alt="Entertainment Article Third Image">
-                  <p class="enterText">Hilariously Bad Celebrity Photo Fails That Should Have Never Happened</p>
-                </div>
-                <div class="cell">
-                  <img src="images/En_image4.jpg" alt="Entertainment Article Forth Image">
-                  <p class="enterText">From Kimye To The Beckhams, Here’s How Your Favorite Celebrity Couples Met</p>
-                  </div>
-              </div>
-            </div>
-         </div>
-          <nav class="orbit-bullets">
-            <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-          </nav>
+        </div>
 
 
-</div><!--image slide ends-->
-    </div><!-- Grid Container End -->
-        <div id="footerbckgrd" class="grid-x grid-padding-x">
+        </div>
+
+        <div class="is-active orbit-slide">
+
+        <div class="grid-x grid-padding-x small-up-2 large-up-4 align-center large-padding-collapse">
+
+        <div class="cell">
+        <img src="images/En_image1.jpg" alt="Entertainment Article First Image">
+        <h3 class="enterText">Drake’s Charmed Life: The Tough Times And Successes Of Aubrey Graham</h3>
+        </div>
+
+        <div class="cell">
+        <img src="images/En_image2.jpg" alt="Entertainment Article Second Image">
+        <h3 class="enterText">The Next Generation Of Stars Taking Over Hollywood</h3>
+        </div>
+
+        <div class="cell">
+        <img src="images/En_image3.jpg" alt="Entertainment Article Third Image">
+        <h3 class="enterText">Hilariously Bad Celebrity Photo Fails That Should Have Never Happened</h3>
+        </div>
+
+        <div class="cell">
+        <img src="images/En_image4.jpg" alt="Entertainment Article Forth Image">
+        <h3 class="enterText">From Kimye To The Beckhams, Here’s How Your Favorite Celebrity Couples Met</h3>
+        </div>
+
+        </div>
+
+        </div>
+
+      </section>
+        <!-- Entertainment Grid contanainer Ends here -->
+        <!-- Entertainment Ends here -->
+
+        <div class="orbit-bullets">
+
+        <button class="is-active" data-slide="0">
+          <span class="show-for-sr">First slide details.</span>
+          <span class="show-for-sr">Current Slide</span>
+        </button>
+
+        <button data-slide="1">
+          <span class="show-for-sr">Second slide details.</span>
+        </button>
+
+        </div>
+
+
+        </div><!--image slide ends-->
+        </div><!-- Grid Container End -->
+
+    <!-- Footer Starts here -->
+    <footer>
+      <h2 class="hide">Footer</h2>
+        <div class="grid-x grid-padding-x">
 
 
 
-            <div id="footerLogo" class="cell small-4 small-offset-4">
+            <div id="footerLogo" class="cell small-4 small-offset-4 large-2 large-offset-5">
               <img src="images/logo.svg" alt="Purevolume Logo">
             </div>
 
-            <nav id="footerNav" class="cell small-12 text-center">
-              <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">CopyRight</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Impression</a></li>
-              </ul>
-            </nav>
+
+
+              <nav id="footerNav" class="cell small-12 text-center">
+                <h3 class="hide">Footer Navigation</h3>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">CopyRight</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Impression</a></li>
+                </ul>
+              </nav>
+
+
+
           </div>
+      </footer>
+      <!-- Footer Ends here -->
+
 
 
     <script src="js/vendor/jquery.js"></script>

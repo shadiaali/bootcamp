@@ -1,19 +1,42 @@
-
-
-
-.boxHelper {
-  background-color: black;
-  color: white;
+/*video section starts*/
+.controls
+{
   text-align: center;
+	background-color: rgba(243,243,243,.8);
+  margin-top: 0;
 }
-p, h3 {
+.player-button
+{
+  float: left;
+  margin-left: .5em;
+}
+
+#teaserVolControl
+{
+  vertical-align: middle;
+}
+
+.videoIcons:hover{
+	cursor: pointer;
+	-webkit-transform:scale3d(1.2, 1.25, 0.1);
+     -moz-transform:scale3d(1.2, 1.25, 0.1);
+       -o-transform:scale3d(1.2, 1.25, 0.1);
+      -ms-transform:scale3d(1.2, 1.25, 0.1);
+          transform:scale3d(1.2, 1.25, 0.1);
+}
+/*video section ends*/
+
+p, h2 {
   font-family: "Nunito Sans", sans-serif;
 }
 
-div h3 {
+div h2 {
   font-size: 1.75em;
   font-weight: bold;
 }
+
+/*Header Starts here*/
+
 .menu-icon:after
 {
    background: #5613f0;
@@ -27,16 +50,10 @@ div h3 {
    background: #5613f0;
    box-shadow: 0 7px 0 #5613f0, 0 14px 0 #5613f0;
 }
-.title-bar
-{
-   background-color:rgba(0,0,0,0.00);
-}
 
 #main-menu li{
   display: block;
   text-decoration: none;
-  border-bottom: 1px solid grey;
-
 }
 
 #main-menu li a {
@@ -44,33 +61,95 @@ div h3 {
   font-weight : normal;
   color: #0b1d9d;
 }
-#main-menu li a:hover {
-  color: #1128cd;
 
+#main-menu li a{
+  position: relative;
+    transition: all 2s;
 }
 
-  #mainVid {
+
+#main-menu li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #0b1d9d;
+  height: 1px;
+  transition: .5s;
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+
+#main-menu li a:hover:after {
+  width: 100%;
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+/*Header Ends Here*/
+
+/*Title Text Starts Here*/
+.titleText {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+
+.titleText{
+  position: relative;
+}
+
+.titleText:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #0b1d9d;
+    height: 1px;
+    transition: .5s;
+}
+
+.titleText:hover:after {
+    width: 100%;
+}
+
+.titleText {
+    color: #1a28a0;
+}
+/*Title Text Ends Here*/
+
+#mainVid {
     height: 30em;
     background-color: black;
-  }
+}
 
-  .titleText {
-    color: #1a28a0;
-  }
+/*Pop culture Starts Here*/
 
-  #popArea img {
+#popArea img {
     margin-bottom: 0.188em;
-  }
-  .popContainer {
-    position: relative;
-  }
+}
 
-  .popImg {
+.popContainer {
+    position: relative;
+}
+
+.popImg {
     display: block;
     height: auto;
-  }
+}
 
-  .popOverlay {
+.popOverlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -79,13 +158,13 @@ div h3 {
     opacity: 0;
     transition: .5s ease;
     background-color: #594c98;
-  }
+}
 
-  .popContainer:hover .popOverlay {
-    opacity: 0.9;
-  }
+.popContainer:hover .popOverlay {
+    opacity: 0.8;
+}
 
-  .popText {
+.popText {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -96,77 +175,84 @@ div h3 {
     transform: translate(-50%, -50%);
     text-align: center;
     opacity: 1;
-  }
-  #musArea {
-    background-color: #e2d9f5;
-  }
+}
+/*Pop culture Ends Here*/
 
-  .musText {
+/*Music Starts Here*/
+#musArea {
+
+}
+
+.musText {
     font-size: 0.938em;
     font-weight: bold;
     padding-top: 1.875em;
     font-family: "Nunito Sans", sans-serif;
-  }
-  .musBorder
-  {
+}
+.musBorder
+{
     border-style: solid;
     border-width: .5em 1em;
     border-color: #e2d9f5;
     background-color: #ffffff;
-  }
+}
+/*Music Ends Here*/
 
+/*Entertainment Starts Here*/
+#enArea img {
+    margin-bottom: 0.438em;
+}
 
-  .enterText {
+.enterText {
     font-size: 0.625em;
     font-weight: bold;
     line-height: 1.125em;
-  }
+}
   .entertainSlider .orbit-previous,
   .entertainSlider .orbit-next {
     color: #cacaca;
-  }
+}
 
 
-  .entertainSlider .orbit-bullets button {
+.entertainSlider .orbit-bullets button {
     height: 0.65rem;
     width: 0.65rem;
-  }
+}
+/*Entertainment Ends Here*/
 
+/*Footer Starts Here*/
 
-
-  #enArea img {
-    margin-bottom: 0.438em;
-  }
-
-
-
-  #footerbckgrd{
-    background-color: #c2d1f8;
-  }
-
-  #footerNav{
+#footerNav{
     margin-top: 1.5em;
-  }
+}
 
-  #footerNav ul li {
+#footerNav ul li {
     text-decoration: none;
     display: inline;
 
-  }
+}
 
-  #footerNav ul li a{
+#footerNav ul li a{
     font-size: 1em;
     font-family: "NotoSansKR", sans-serif;
     font-weight: normal;
     text-align: center;
     margin-left: 2em;
-  }
+    color: black;
+}
 
-  #footerNav ul li a{
+#footerNav ul li a{
      margin-left: 0em;
-  }
+}
+/*Footer Ends Here*/
+
 
   @media screen and (min-width: 64em) {
+
+    #main-menu li{
+      float: right;
+    }
+
     #main-menu li {
       display: inline;
       text-decoration: none;
@@ -183,8 +269,7 @@ div h3 {
 
     #main-menu li a:hover {
       transition: linear 5s;
-      background-color: lightgrey;
-      border-radius: 15px;
+      border-radius: 5px;
 
     }
 
@@ -192,7 +277,7 @@ div h3 {
 
     #mainNav
     {
-        margin-top: 3.9em;
+        margin-top: 3.0em;
     }
 
     #mainLogo {
@@ -207,11 +292,8 @@ div h3 {
       #mainVid {
         height: 30em;
         background-color: black;
-      }
-
-
-      h3 {
-        color: #1a28a0;
+        margin-top: 1.25em;
+        margin-bottom: 0.875em;
       }
 
       .titleText {
@@ -219,8 +301,40 @@ div h3 {
       }
 
       #musArea {
-        background-color: #e2d9f5;
         padding: 0;
+        height: 38.125em;
+      }
+
+      #musArea div p{
+        color: white;
+        font-family: "Nunito Sans", sans-serif;
+      }
+
+      #text1 {
+        font-size: 1.875em;
+        margin-top: 1.25em;
+      }
+
+      #text2 {
+        font-size: 1.250em;
+      }
+
+      .btn {
+        text-align: center;
+        text-decoration: none;
+        font-family: "Nunito Sans", sans-serif;
+        background-color: #162832;
+      }
+
+      #readBut {
+        border: 1px solid #ff9000;
+        color: #ff9000;
+        padding: 2px 5px;
+        border-radius: 5px;
+        margin-top: 2.25em;
+        margin-bottom: 2.25em;
+        width: 130px;
+        font-size: 0.938em;
       }
 
       #popArea img {
@@ -230,6 +344,10 @@ div h3 {
       .musText {
         font-size: 1.875em;
         font-weight: normal;
+      }
+
+      #musImgSec div p {
+        font-size: 0.813em;
       }
 
       .enterText {
@@ -243,18 +361,25 @@ div h3 {
 
       .enterText {
         font-size: 1.313em;
+        font-family: "Nunito Sans", sans-serif;
       }
 
 
       .musBorder
       {
           border-width: 0em;
-          background-color: #e2d9f5;
       }
 
       .orbit-previous, .orbit-next
       {
             top: 30%;
+      }
+
+      .musicSec {
+        background-image: url("../images/music_1.jpg");
+        background-repeat: no-repeat;
+        -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari 6.0 - 9.0 */
+        filter: drop-shadow(8px 8px 10px gray);
       }
 
 
@@ -266,12 +391,13 @@ div h3 {
           margin-bottom: 1.063em;
       }
 
-      #footerbckgrd{
-        background-color: #c2d1f8;
+      #footerbckgrd {
+         background-color: #1b282f;
       }
 
       #footerNav{
         margin-top: 1.5em;
+        background-color: #1b282f;
       }
 
       #footerNav ul li {
@@ -286,6 +412,7 @@ div h3 {
         font-weight: normal;
         text-align: center;
         margin-left: 1.813em;
+        color: white;
       }
 
       #footerNav ul li a:last-child{
