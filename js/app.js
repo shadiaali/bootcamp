@@ -104,3 +104,31 @@ function toggleFullScreen(){
 teaserVolume.addEventListener("input",muteVolume,false );//for volume bar
 window.addEventListener ("load", init, false); //make sures the video loads before they can interact (Until the entire page loads they cant hit play)
 teaserVolumeOn.addEventListener("click", mutePlayer, false);
+
+//
+
+
+	var MusImages = document.querySelectorAll(".musImg"),
+			musArea = document.querySelector("#musArea"),
+  		a = ["images/musicBkgrd_1.jpg","images/musicBkgrd_2.jpg","images/musicBkgrd_3.jpg"];
+
+		function imageSwap(e){
+					var i;
+					var pic = e.target.src;
+					if(pic.endsWith("1.jpg")){
+							i=0;
+					}
+					if(pic.endsWith("2.jpg")){
+						i=1;
+					}
+					if(pic.endsWith("3.jpg")){
+						i=2;
+					}
+		musArea.style.backgroundImage ="url("+a[i]+")";;
+			}
+
+
+for(i=0; i<MusImages.length; i++){
+
+		MusImages[i].addEventListener("mouseover", imageSwap, false);
+}
