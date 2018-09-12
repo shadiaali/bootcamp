@@ -6,6 +6,7 @@ A rebranding for the website PUREVOLUME for Hivemedia by second year students at
 ### Installing
 
 git clone https://github.com/smalfoy/bootcamp.git
+You're ready to go.
 
 
 ## Built With
