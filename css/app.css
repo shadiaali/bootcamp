@@ -9,9 +9,7 @@ div h2 {
 }
 
 /*Header Starts here*/
-header {
-  background-color: #ffffff /* For browsers that do not support gradients */
-}
+
 .title-bar
 {
  background: rgba(255,255,255,0);
@@ -303,7 +301,8 @@ input[type=range]::-webkit-slider-thumb {
 
 #enterSec img {
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  -ms-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  -moz-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 #enterSec h3{
 
@@ -375,10 +374,10 @@ input[type=range]::-webkit-slider-thumb {
 /*desktop*/
 
   @media screen and (min-width: 64em) {
+
     header {
-      -webkit-box-shadow: inset 0 8px 6px 0px rgba(83, 52, 187, 1);
-      	   -moz-box-shadow: inset 0 8px 6px 0px rgba(83, 52, 187, 1);
-      	        box-shadow: inset 0px -10px 0px 0px rgba(83, 52, 187, 1);
+
+   box-shadow: inset 0px -10px 0px 0px rgba(83, 52, 187, 1);
     }
     #main-menu ul {
       padding-bottom: 2em;
@@ -654,6 +653,12 @@ input[type=range]::-webkit-slider-thumb {
           background-color:#c2d1f8;
 
       }
+
+      .article-row-content h1{
+        font-family: "NotoSansKR", sans-serif;
+        font-weight: bold;
+
+      }
   }
 
     @media screen and (max-width: 63.938em) {
@@ -679,7 +684,7 @@ input[type=range]::-webkit-slider-thumb {
         color: white;
         transition: .2s;
       }
-  
+
     }
     /*index page ends*/
   /*Pop Culture Page starts*/
@@ -739,6 +744,30 @@ input[type=range]::-webkit-slider-thumb {
   max-width: 100%;
 }
 
+.article-row-section-inner
+{
+    box-shadow: 0 0 .4em 0em rgba(0,0,0,0.5);
+}
+.popBtn {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #4e31b8;
+  border: 1px solid #4e31b8;
+  color: #ffffff;
+  padding: .25em .4em;
+  border-radius: .25em;
+  font-size: 0.938em;
+  margin-top: 1em;
+  width: 12em;
+}
+
+.popBtn:hover {
+  border: 1px solid #ba7cfd;
+  transition: .5s;
+  background-color: #ba7cfd;
+  color: #123456;
+}
 @media print, screen and (min-width: 40em) {
   .article-row-section-inner {
     padding-right: 0.9375rem;
@@ -783,6 +812,10 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 @media print, screen and (min-width: 40em) {
+  .article {
+    font-family: "Nunito Sans", sans-serif;
+  }
+
   .article-row {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
@@ -806,6 +839,7 @@ input[type=range]::-webkit-slider-thumb {
   color: #0a0a0a;
 }
 
+
 @media print, screen and (min-width: 40em) {
   .article-row-content {
     padding: 0 0 0 1.5rem;
@@ -814,10 +848,12 @@ input[type=range]::-webkit-slider-thumb {
 
 .article-row-content-header {
   font-size: 1.5rem;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .article-row-content-description {
   font-size: 1.25rem;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .article-row-content-author,
@@ -825,6 +861,7 @@ input[type=range]::-webkit-slider-thumb {
   font-size: 0.875rem;
   margin-bottom: 0;
   color: #8a8a8a;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .article-row-reversed .article-row-content {
@@ -852,4 +889,14 @@ input[type=range]::-webkit-slider-thumb {
         -ms-flex-order: 2;
             order: 2;
   }
+}
+@media screen and (min-width: 64em) {
+  .article-row-section{
+      margin-bottom: 6em;
+    }
+    .article-row-content h1{
+        font-family: "NotoSansKR", sans-serif;
+        font-weight: bold;
+
+      }
 }
