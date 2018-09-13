@@ -165,5 +165,6 @@ if (mq.matches) {
 
 for(i=0; i<MusImages.length; i++){
 		MusImages[i].addEventListener("mouseover", musicSwap, false);
+		}
+	}
 }
-}}
