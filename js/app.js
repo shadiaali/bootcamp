@@ -46,6 +46,7 @@ function togglePlay(evt) { //to get the video to fire and play
 
 function restart() {
         teaserVideo.currentTime = 0;
+				teaserVideo.pause();
     }
 
 
