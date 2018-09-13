@@ -1,36 +1,3 @@
-.videoIcons {
-  color: #5334bb;
-}
-
-#fullscreenbtn {
-  color: #5334bb;
-}
-/*video section starts*/
-.controls
-{
-  text-align: center;
-   background-color: rgba(243,243,243,.8);
-  margin-top: -7px;
-
-}
-.player-button
-{
-  float: right;
-  margin-left: .5em;
-}
-
-
-
-.videoIcons:hover{
-   cursor: pointer;
-   -webkit-transform:scale3d(1.2, 1.25, 0.1);
-     -moz-transform:scale3d(1.2, 1.25, 0.1);
-       -o-transform:scale3d(1.2, 1.25, 0.1);
-      -ms-transform:scale3d(1.2, 1.25, 0.1);
-          transform:scale3d(1.2, 1.25, 0.1);
-}
-/*video section ends*/
-
 p, h2 {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -41,9 +8,14 @@ div h2 {
 }
 
 /*Header Starts here*/
+header {
+  background-color: #ffffff; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#ffffff 60%, #dee6fb); /* Standard syntax (must be last) */
+
+}
 .title-bar
 {
- background: #ffffff;
+ background: rgba(255,255,255,0);
 }
 
 #popArea img {
@@ -152,10 +124,83 @@ div h2 {
 }
 /*Title Text Ends Here*/
 
-#mainVid {
+.videoIcons {
+  color: #5334bb;
+}
 
+#fullscreenbtn {
+  color: #5334bb;
+}
+/*video section starts*/
+.controls
+{
+  text-align: center;
+   background-color: rgba(245,245,245,.8);
+  margin-top: -7px;
+  -moz-box-shadow:    inset 0 0 10px #5334bb;
+  -webkit-box-shadow: inset 0 0 10px #5334bb;
+  box-shadow:         inset 0 0 10px #5334bb;
 
 }
+.controls i {
+      float: left;
+    }
+
+    #teaserVolControl {
+      float: left;
+      margin-top: .75em;
+    }
+
+    #fullscreenbtn {
+      float: right;
+      margin-right: 1em;
+    }
+.player-button
+{
+  float: right;
+  margin-left: .5em;
+}
+
+
+
+.videoIcons:hover{
+   cursor: pointer;
+   -webkit-transform:scale3d(1.2, 1.25, 0.1);
+     -moz-transform:scale3d(1.2, 1.25, 0.1);
+       -o-transform:scale3d(1.2, 1.25, 0.1);
+      -ms-transform:scale3d(1.2, 1.25, 0.1);
+          transform:scale3d(1.2, 1.25, 0.1);
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+
+  height: .55em;
+  cursor: pointer;
+  animation: 0.2s;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 1.785em;
+  width: .5em;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -.7em;
+}
+
+/*video section ends*/
 
 /*Pop culture Starts Here*/
 
@@ -206,6 +251,16 @@ div h2 {
 
 /*Music Starts Here*/
 
+.musImgSec img {
+  border-radius: 4%;
+}
+
+.musImg h4
+{
+  background-color: rgba(26, 40, 160, 0.9);
+  color: #ffffff;
+  padding: .2em;
+}
 .musText {
     font-size: 0.938em;
     font-weight: bold;
@@ -233,11 +288,7 @@ div h2 {
     margin-bottom: 0.438em;
 }
 
-.enterText {
-    font-size: 0.625em;
-    font-weight: bold;
-    line-height: 1.125em;
-}
+
   .entertainSlider .orbit-previous,
   .entertainSlider .orbit-next {
     color: #cacaca;
@@ -252,6 +303,18 @@ div h2 {
 #enterSec img {
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
   clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+#enterSec h3{
+
+  color: #1a28a0;
+  font-size: 1.125em;
+
+  font-weight: bold;
+    padding: .2em;
+}
+.enterImg img
+{
+  border-bottom: .5em solid #1a28a0;
 }
 /*Entertainment Ends Here*/
 
@@ -342,25 +405,13 @@ div h2 {
         margin-left:0.75em;
     }
 
+
     .controls
-    {
-       background-color: rgba(243,243,243,.2);
-       margin-top: -5em;
-    }
-
-    .controls i {
-      float: left;
-    }
-
-    #teaserVolControl {
-      float: left;
-      margin-top: .75em;
-    }
-
-    #fullscreenbtn {
-      float: right;
-      margin-right: 1em;
-    }
+{
+  background-color: rgba(255,255,255,.8);
+  margin-top: -7px;
+  padding: .2em;
+}
 
     input[type=range] {
       -webkit-appearance: none;
@@ -481,8 +532,6 @@ div h2 {
         color:#fff;
         font-weight:normal;
         margin-top:0.2em;
-
-
       }
 
       h4 span{
@@ -512,23 +561,19 @@ div h2 {
       .musImgSec div p {
         font-size: 0.813em;
       }
-
-      .musImgSec img {
-        border-radius: 4%;
+      .musImg h4
+      {
+        background-color: transparent;
       }
 
-      .enterText {
-        font-size: 1.75em;
+
+
+      #enterSec h3{
+
+        font-size: 1.3em;
         line-height: 1em;
-      }
-
-      .botArticle {
-
-      }
-
-      .enterText {
-        font-size: 1.313em;
         font-family: "Nunito Sans", sans-serif;
+
       }
 
 
@@ -563,31 +608,33 @@ div h2 {
 
       #footerNav{
         margin-top: 1.5em;
-        background-color: #c2d1f8;
+        background-color: rgba(83, 52, 187, 1);
+        padding-top: .5em;
       }
 
       #footerNav ul li {
         text-decoration: none;
         display: inline;
-        background-color:#c2d1f8;
+        background-color:rgba(83, 52, 187, 1);
 
 
       }
 
       #footerNav ul li a{
-        font-size: 1.875em;
+        font-size: 1.2em;
         font-family: "NotoSansKR", sans-serif;
         font-weight: normal;
         text-align: center;
         margin-left: 1.813em;
         color: white;
-        background-color:#c2d1f8;
+
+
 
       }
 
       #footerNav ul li a:last-child{
          margin-right: 0;
-         background-color:#c2d1f8;
+         background-color: rgba(83, 52, 187, 1);
 
       }
 
