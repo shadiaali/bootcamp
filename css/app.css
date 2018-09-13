@@ -129,6 +129,10 @@ div h2 {
   color: #5334bb;
 }
 /*video section starts*/
+#teaserPlayer
+{
+  background-color: rgba(0,0,0,1);
+}
 .controls
 {
   text-align: center;
@@ -405,14 +409,12 @@ input[type=range]::-webkit-slider-thumb {
 
     }
 
-    .fa, .fas {
-        margin-left:0.75em;
-    }
-
-
+#teaserPlayer{
+  margin-top: 6em;
+}
     .controls
 {
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255,255,255,1);
   margin-top: -7px;
   padding: .2em;
 }
@@ -487,7 +489,7 @@ input[type=range]::-webkit-slider-thumb {
         filter: drop-shadow(8px 8px 10px gray);
       }
 
-      #musArea div p, h3{
+      #musArea div p, #musArea div h3{
         color: white;
         font-family: "Nunito Sans", sans-serif;
       }
@@ -562,7 +564,7 @@ input[type=range]::-webkit-slider-thumb {
         font-weight: normal;
       }
 
-      .musImgSec div p {
+      .musImgSec p {
         font-size: 0.813em;
       }
       .musImg h4
@@ -654,7 +656,7 @@ input[type=range]::-webkit-slider-thumb {
 
       }
 
-      .article-row-content h1{
+      .article-row-content h3{
         font-family: "NotoSansKR", sans-serif;
         font-weight: bold;
 
@@ -683,6 +685,9 @@ input[type=range]::-webkit-slider-thumb {
       #main-menu li:hover a{
         color: white;
         transition: .2s;
+      }
+      .fa-2x {
+      font-size: 1.5em !important;
       }
 
     }
@@ -753,7 +758,7 @@ input[type=range]::-webkit-slider-thumb {
   text-decoration: none;
   font-family: "Nunito Sans", sans-serif;
   background-color: #4e31b8;
-  border: 1px solid #4e31b8;
+  border: 1px solid #ffffff;
   color: #ffffff;
   padding: .25em .4em;
   border-radius: .25em;
@@ -763,7 +768,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .popBtn:hover {
-  border: 1px solid #ba7cfd;
+  border: 1px solid #ffffff;
   transition: .5s;
   background-color: #ba7cfd;
   color: #123456;
@@ -894,7 +899,7 @@ input[type=range]::-webkit-slider-thumb {
   .article-row-section{
       margin-bottom: 6em;
     }
-    .article-row-content h1{
+    .article-row-content h3{
         font-family: "NotoSansKR", sans-serif;
         font-weight: bold;
 
