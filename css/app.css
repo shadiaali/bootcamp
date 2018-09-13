@@ -1,22 +1,28 @@
 
+.videoIcons {
+  color: #5334bb;
+}
 
-/*Index Page starts*/
+#fullscreenbtn {
+  color: #5334bb;
+}
 /*video section starts*/
 .controls
 {
   text-align: center;
    background-color: rgba(243,243,243,.8);
-  margin-top: 0;
+  margin-top: -7px;
+
 }
 .player-button
 {
-  float: left;
+  float: right;
   margin-left: .5em;
 }
 
 #teaserVolControl
 {
-  vertical-align: middle;
+  vertical-align: left;
 }
 
 .videoIcons:hover{
@@ -38,13 +44,17 @@ div h2 {
   font-weight: bold;
 }
 
-section
+/*Header Starts here*/
+.title-bar
 {
-  margin-top: 1.875em;
-  margin-bottom: 1.875em;
+ background: #ffffff;
 }
 
-/*Header Starts here*/
+#popArea img {
+  border-radius: 5% 0 5% 0;
+  -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari 6.0 - 9.0 */
+  filter: drop-shadow(8px 8px 10px gray);
+}
 
 .menu-icon:after
 {
@@ -105,11 +115,13 @@ section
 }
 /*Header Ends Here*/
 
-/*Title Text Starts Here*/
-.title-bar
-{
-  background: #ffffff;
+.fa, .fas {
+    margin-left:.2em;
+    margin-right:.2em;
+    padding:2px;
 }
+
+/*Title Text Starts Here*/
 .titleText {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -117,6 +129,8 @@ section
 
 .titleText{
   position: relative;
+  margin-bottom:.5em;
+  margin-top:1.3em;
 }
 
 .titleText:after{
@@ -143,8 +157,8 @@ section
 /*Title Text Ends Here*/
 
 #mainVid {
-    height: 30em;
-    background-color: black;
+
+
 }
 
 /*Pop culture Starts Here*/
@@ -171,10 +185,13 @@ section
     opacity: 0;
     transition: .5s ease;
     background-color: #594c98;
+    border-radius:4%;
 }
 
 .popContainer:hover .popOverlay {
     opacity: 0.8;
+    border-radius:4%;
+
 }
 
 .popText {
@@ -192,10 +209,12 @@ section
 /*Pop culture Ends Here*/
 
 /*Music Starts Here*/
-#musArea {
+.blackOverlay
+{
 
+  background:#7f7f7f;
+  background:rgba(0,0,0,0.5);
 }
-
 .musText {
     font-size: 0.938em;
     font-weight: bold;
@@ -208,6 +227,7 @@ section
     border-width: .5em 1em;
     border-color: #e2d9f5;
     background-color: #ffffff;
+    border-radius:4%;
 }
 /*Music Ends Here*/
 
@@ -231,187 +251,81 @@ section
     height: 0.65rem;
     width: 0.65rem;
 }
+
+#enterSec img {
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
 /*Entertainment Ends Here*/
 
 /*Footer Starts Here*/
 
 #footerNav{
     margin-top: 1.5em;
+    background-color:#c2d1f8;
 }
 
 #footerNav ul li {
     text-decoration: none;
     display: inline;
+    background-color:#c2d1f8;
+    margin-left:0.5em;
+    margin-right:0.5em;
+
 
 }
 
 #footerNav ul li a{
     font-size: 1em;
     font-family: "NotoSansKR", sans-serif;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
     margin-left: 2em;
-    color: black;
+    color: #fff;
+    background-color:#c2d1f8;
+
 }
 
 #footerNav ul li a{
      margin-left: 0em;
+     background-color:#c2d1f8;
+     color:#fff;
+
+}
+
+#footerLogo{
+  background-color:#c2d1f8;
+
+}
+
+.foot{
+
+    background-color:#c2d1f8;
+
+}
+#footerLogo{
+  background-color:#c2d1f8;
+  margin-bottom:0.6em;
+  margin-top:2em;
+
 }
 /*Footer Ends Here*/
-/*Index Page ends*/
 
-/*Pop Culture Page starts*/
-
-.article-row-section {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.article-row-section-inner {
-  -webkit-flex: 0 0 100%;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 100%;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem;
-  max-width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .article-row-section-inner {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-@media print, screen and (min-width: 40em) {
-  .article-row-section-inner {
-    -webkit-flex: 0 0 83.33333%;
-        -ms-flex: 0 0 83.33333%;
-            flex: 0 0 83.33333%;
-    max-width: 83.33333%;
-    padding-right: 0.625rem;
-    padding-left: 0.625rem;
-    max-width: 83.33333%;
-  }
-}
-
-@media print, screen and (min-width: 40em) and (min-width: 40em) {
-  .article-row-section-inner {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-  }
-}
-
-.article-row-section-header {
-  padding: 1.5rem 0;
-  margin: 0;
-  line-height: 1;
-}
-
-.article-row {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-top: 1px solid #e6e6e6;
-  padding: 1.5rem 0;
-}
-
-@media print, screen and (min-width: 40em) {
-  .article-row {
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-.article-row-img img {
-  width: 100%;
-}
-
-@media print, screen and (min-width: 40em) {
-  .article-row-img img {
-    max-width: none;
-    width: auto;
-  }
-}
-
-.article-row-content {
-  padding: 1.5rem 0 0;
-  color: #0a0a0a;
-}
-
-@media print, screen and (min-width: 40em) {
-  .article-row-content {
-    padding: 0 0 0 1.5rem;
-  }
-}
-
-.article-row-content-header {
-  font-size: 1.5rem;
-}
-
-.article-row-content-description {
-  font-size: 1.25rem;
-}
-
-.article-row-content-author,
-.article-row-content-time {
-  font-size: 0.875rem;
-  margin-bottom: 0;
-  color: #8a8a8a;
-}
-
-.article-row-reversed .article-row-content {
-  -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
-  padding: 0 1.5rem 0 0;
-}
-
-.article-row-reversed .article-row-img {
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
-  padding: 0 0 1.5rem 0;
-}
-
-@media print, screen and (min-width: 40em) {
-  .article-row-reversed .article-row-content {
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .article-row-reversed .article-row-img {
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-}
-
-/*Pop Culture Page ends*/
-
+/*desktop*/
 
   @media screen and (min-width: 64em) {
+
+    #main-menu ul {
+      padding-bottom: 2em;
+    }
+
 
     #main-menu li {
       display: inline;
       text-decoration: none;
       font-size: 1.7em;
-      margin-left: 3em;
+      margin-left:2em;
+      margin-bottom: 1em;
       border-bottom: none;
     }
 
@@ -427,28 +341,81 @@ section
 
     }
 
+    .fa, .fas {
+        margin-left:0.75em;
+    }
 
+    .controls
+    {
+       background-color: rgba(243,243,243,.2);
+       margin-top: -5em;
+    }
+
+    .controls i {
+      float: left;
+    }
+
+    #teaserVolControl {
+      float: left;
+      margin-top: .75em;
+    }
+
+    #fullscreenbtn {
+      float: right;
+      margin-right: 1em;
+    }
+
+    input[type=range] {
+      -webkit-appearance: none;
+      margin: 18px 0;
+    }
+    input[type=range]:focus {
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+
+      height: .4em;
+      cursor: pointer;
+      animate: 0.2s;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      background: #3071a9;
+      border-radius: 1.3px;
+      border: 0.2px solid #010101;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      border: 1px solid #000000;
+      height: 1.785em;
+      width: .5em;
+      border-radius: 3px;
+      background: #ffffff;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -.7em;
+    }
 
     #mainNav
     {
-        margin-top: 3.0em;
+        margin-top: 4em;
+        margin-left:2.6em;
+        margin-bottom:2em;
+        font-size:1em;
+        margin-right:4.3em;
+        padding:0.4em;
+
     }
 
     #mainLogo {
-      margin-top: 1.5em;
+      margin-top: 1.8em;
+      margin-left:1em;
+
     }
 
     #main-menu {
-      margin-top: 1.5em;
+      margin-top: 1em;
+      margin-left:1em;
     }
 
-
-      #mainVid {
-        height: 30em;
-        background-color: black;
-        margin-top: 1.25em;
-        margin-bottom: 0.875em;
-      }
 
       .titleText {
           font-size: 3em;
@@ -457,6 +424,10 @@ section
       #musArea {
         padding: 0;
         height: 38.125em;
+        background-image: url("../images/music_bckgrd_1.jpg");
+        background-repeat: no-repeat;
+        -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari 6.0 - 9.0 */
+        filter: drop-shadow(8px 8px 10px gray);
       }
 
       #musArea div p{
@@ -487,7 +458,8 @@ section
         border-radius: 5px;
         margin-top: 2.25em;
         margin-bottom: 2.25em;
-        width: 130px;
+        width: 2em;
+        height:2em;
         font-size: 0.938em;
       }
 
@@ -502,17 +474,32 @@ section
         color: #162832;
       }
 
-      #popArea img {
-        -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari 6.0 - 9.0 */
-        filter: drop-shadow(8px 8px 10px gray);
+      h4{
+        font-size:1.2em;
+        color:#fff;
+        font-weight:normal;
+        margin-top:0.2em;
+
+
       }
 
-      .popCulText {
-        text-align: center;
-        background-color: #e5f2d8;
-        font-size: 0.750em;
-        height: 2.188em;
-        padding-top: 0.25em;
+      h4 span{
+          background-color:rgba(0, 0, 0, 0.5);
+      }
+
+      #readBut {
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 2px 5px;
+        border-radius: 5px;
+        margin-top: 2.25em;
+        margin-bottom: 2.25em;
+        width: 130px;
+        font-size: 0.938em;
+      }
+
+      #popArea img {
+        margin-bottom: 0;
       }
 
       .musText {
@@ -524,16 +511,22 @@ section
         font-size: 0.813em;
       }
 
-
-      .botArticle {
-        margin-top: 1.25em;
+      #musImgSec img {
+        border-radius: 4%;
       }
 
       .enterText {
-        font-size: 1em;
-        font-family: "Nunito Sans", sans-serif;
+        font-size: 1.75em;
         line-height: 1em;
-        font-weight: normal;
+      }
+
+      .botArticle {
+
+      }
+
+      .enterText {
+        font-size: 1.313em;
+        font-family: "Nunito Sans", sans-serif;
       }
 
 
@@ -548,10 +541,7 @@ section
       }
 
       .musicSec {
-        background-image: url("../images/music_1.jpg");
-        background-repeat: no-repeat;
-        -webkit-filter: drop-shadow(8px 8px 10px gray); /* Safari 6.0 - 9.0 */
-        filter: drop-shadow(8px 8px 10px gray);
+
       }
 
 
@@ -564,26 +554,427 @@ section
       }
 
       #footerbckgrd {
-         background-color: #1b282f;
+         background-color: #c2d1f8;
       }
 
       #footerNav{
         margin-top: 1.5em;
-        background-color: #1b282f;
+        background-color: #c2d1f8;
       }
 
       #footerNav ul li {
         text-decoration: none;
         display: inline;
+        background-color:#c2d1f8;
+
+
       }
 
       #footerNav ul li a{
-        font-size: 1.5em;
+        font-size: 1.875em;
         font-family: "NotoSansKR", sans-serif;
         font-weight: normal;
         text-align: center;
         margin-left: 1.813em;
         color: white;
+        background-color:#c2d1f8;
+
       }
 
+      #footerNav ul li a:last-child{
+         margin-right: 0;
+         background-color:#c2d1f8;
+
+      }
+
+      #footerLogo{
+        background-color:#c2d1f8;
+        margin-bottom:0.6em;
+        margin-top:2em;
+
+      }
+      .foot{
+
+          background-color:#c2d1f8;
+
+      }
   }
+
+  /*Pop Culture Page starts*/
+
+  .btn {
+    text-align: center;
+    text-decoration: none;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #162832;
+  }
+
+  #readBut {
+    border: 1px solid #ff9000;
+    color: #ff9000;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-top: 2.25em;
+    margin-bottom: 2.25em;
+    width: 130px;
+    font-size: 0.938em;
+  }
+
+  .btn:hover {
+    border: 1px solid #162832;
+    transition: .5s;
+  }
+
+  #readBut:hover {
+    transition: .5s;
+    background-color: #ff9000;
+    color: #162832;
+  }
+
+
+  .article-row-section {
+    max-width: 75rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .article-row-section-inner {
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    max-width: 100%;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-section-inner {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-section-inner {
+      -webkit-flex: 0 0 83.33333%;
+          -ms-flex: 0 0 83.33333%;
+              flex: 0 0 83.33333%;
+      max-width: 83.33333%;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      max-width: 83.33333%;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  @media print, screen and (min-width: 40em) and (min-width: 40em) {
+    .article-row-section-inner {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  .article-row-section-header {
+    padding: 1.5rem 0;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .article-row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-top: 1px solid #e6e6e6;
+    padding: 1.5rem 0;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row {
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  .article-row-img img {
+    width: 100%;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-img img {
+      max-width: none;
+      width: auto;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  .article-row-content {
+    padding: 1.5rem 0 0;
+    color: #0a0a0a;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-content {
+      padding: 0 0 0 1.5rem;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  .article-row-content-header {
+    font-size: 2.5rem;
+  }
+
+  .article-row-content-description {
+    font-size: 1.5rem;
+  }
+
+  .article-row-content-author,
+  .article-row-content-time {
+    font-size: 1.2em;
+    margin-bottom: 0;
+    color: #000;
+    font-family:Arial;
+
+  }
+
+  .article-row-reversed .article-row-content {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0 1.5rem 0 0;
+  }
+
+  .article-row-reversed .article-row-img {
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 0 0 1.5rem 0;
+  }
+
+  @media print, screen and (min-width: 40em) {
+    .article-row-reversed .article-row-content {
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+    }
+    .article-row-reversed .article-row-img {
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2;
+    }
+
+    .btn {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Nunito Sans", sans-serif;
+      background-color: #162832;
+    }
+
+    #readBut {
+      border: 1px solid #ff9000;
+      color: #ff9000;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 2.25em;
+      margin-bottom: 2.25em;
+      width: 130px;
+      font-size: 0.938em;
+    }
+
+    .btn:hover {
+      border: 1px solid #162832;
+      transition: .5s;
+    }
+
+    #readBut:hover {
+      transition: .5s;
+      background-color: #ff9000;
+      color: #162832;
+    }
+  }
+
+  /*Pop Culture Page ends*/
