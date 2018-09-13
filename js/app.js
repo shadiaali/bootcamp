@@ -108,27 +108,61 @@ teaserVolumeOn.addEventListener("click", mutePlayer, false);
 //
 
 
+if (matchMedia) {
+const mq = window.matchMedia("(min-width: 1024px)");
+mq.addListener(WidthChange);
+WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+if (mq.matches) {
+
+
+
 	var MusImages = document.querySelectorAll(".musImg"),
 			musArea = document.querySelector("#musArea"),
-  		a = ["images/musicBkgrd_1.jpg","images/musicBkgrd_2.jpg","images/musicBkgrd_3.jpg"];
+  		imgBkgrd = ["images/musicBkgrd_1.jpg","images/musicBkgrd_2.jpg","images/musicBkgrd_3.jpg","images/musicBkgrd_4.jpg","images/musicBkgrd_5.jpg","images/musicBkgrd_6.jpg"],
+			musicHeading = document.querySelector("#musicHeading"),
+			musicArticle = document.querySelector("#musicArticle"),
+			heading = ["Lady Gaga Strongly Supports Gay Rights","The Life Story Of Paul McCartney","The Complicated Life Of Kurt Cobain",
+									"Jack White: From Altar Boy To Rock God","“Flexible” Sia Doesn’t Care About Gender","Rapper Angel Haze Identifies As Pansexual"],
+			article = ["Lady Gaga tweeted as recently as June 2018, “I love the lgbtq community more than I can say. So I’ll sing it instead. Forever. And that’s a NY promise. One love!” ...",
+								"Paul McCartney is a living legend. He penned some of the Beatles’ most beloved hits including “Hey Jude” and “Yesterday.” ...",
+								"Most people know Kurt Cobain as the singer of Nirvana who tragically took his own life at the age of 27. Cobain was a talented musician and ...",
+								"If you’ve ever picked up a guitar, chances are one of the first things you learned to strum was the chord progression to the White Stripes “Seven Nation Army.”...",
+								"Australian singer Sia has always been open about her sexual fluidity. While some celebs keep their orientation private, Sia is ...",
+								"Gay rappers are uncommon, but Angel Haze easily breaks stereotypes. She identifies as pansexual, a person who can love “men and women but also transgendered, ..."];
 
-		function imageSwap(e){
+		function musicSwap(e){
 					var i;
-					var pic = e.target.src;
-					if(pic.endsWith("1.jpg")){
+					var pic = e.target;
+
+					if(pic.src.endsWith("1.jpg")){
 							i=0;
 					}
-					if(pic.endsWith("2.jpg")){
+					if(pic.src.endsWith("2.jpg")){
 						i=1;
 					}
-					if(pic.endsWith("3.jpg")){
+					if(pic.src.endsWith("3.jpg")){
 						i=2;
 					}
-		musArea.style.backgroundImage ="url("+a[i]+")";;
+					if(pic.src.endsWith("4.jpg")){
+						i=3;
+					}
+					if(pic.src.endsWith("5.jpg")){
+						i=4;
+					}
+					if(pic.src.endsWith("6.jpg")){
+						i=5;
+					}
+		musArea.style.backgroundImage ="url("+imgBkgrd[i]+")";;
+		musicHeading.innerText = heading[i];
+		musicArticle.innerText = article[i];
 			}
 
 
 for(i=0; i<MusImages.length; i++){
-
-		MusImages[i].addEventListener("mouseover", imageSwap, false);
+		MusImages[i].addEventListener("mouseover", musicSwap, false);
 }
+}}

@@ -1,26 +1,29 @@
+.videoIcons {
+  color: #5334bb;
+}
 
+#fullscreenbtn {
+  color: #5334bb;
+}
 /*video section starts*/
 .controls
 {
   text-align: center;
-	background-color: rgba(243,243,243,.8);
+   background-color: rgba(243,243,243,.8);
   margin-top: -7px;
 
 }
 .player-button
 {
-  float: left;
+  float: right;
   margin-left: .5em;
 }
 
-#teaserVolControl
-{
-  vertical-align: middle;
-}
+
 
 .videoIcons:hover{
-	cursor: pointer;
-	-webkit-transform:scale3d(1.2, 1.25, 0.1);
+   cursor: pointer;
+   -webkit-transform:scale3d(1.2, 1.25, 0.1);
      -moz-transform:scale3d(1.2, 1.25, 0.1);
        -o-transform:scale3d(1.2, 1.25, 0.1);
       -ms-transform:scale3d(1.2, 1.25, 0.1);
@@ -202,12 +205,7 @@ div h2 {
 /*Pop culture Ends Here*/
 
 /*Music Starts Here*/
-.blackOverlay
-{
-  height: 100%;
-  background:#7f7f7f;
-  background:rgba(0,0,0,0.5);
-}
+
 .musText {
     font-size: 0.938em;
     font-weight: bold;
@@ -222,9 +220,15 @@ div h2 {
     background-color: #ffffff;
     border-radius:4%;
 }
+.musicBtn
+{
+  top: 40%;
+}
+
 /*Music Ends Here*/
 
 /*Entertainment Starts Here*/
+
 #enArea img {
     margin-bottom: 0.438em;
 }
@@ -308,6 +312,10 @@ div h2 {
 
   @media screen and (min-width: 64em) {
 
+    #main-menu ul {
+      padding-bottom: 2em;
+    }
+
 
     #main-menu li {
       display: inline;
@@ -331,17 +339,57 @@ div h2 {
     }
 
     .fa, .fas {
-        margin-left:1em;
-        margin-right:1em;
-        padding:5px;
+        margin-left:0.75em;
     }
 
     .controls
     {
-      text-align: center;
-    	background-color: rgba(243,243,243,.2);
-      margin-top: -5em;}
+       background-color: rgba(243,243,243,.2);
+       margin-top: -5em;
+    }
 
+    .controls i {
+      float: left;
+    }
+
+    #teaserVolControl {
+      float: left;
+      margin-top: .75em;
+    }
+
+    #fullscreenbtn {
+      float: right;
+      margin-right: 1em;
+    }
+
+    input[type=range] {
+      -webkit-appearance: none;
+      margin: 18px 0;
+    }
+    input[type=range]:focus {
+      outline: none;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+
+      height: .4em;
+      cursor: pointer;
+      animation: 0.2s;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      background: #3071a9;
+      border-radius: 1.3px;
+      border: 0.2px solid #010101;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      border: 1px solid #000000;
+      height: 1.785em;
+      width: .5em;
+      border-radius: 3px;
+      background: #ffffff;
+      cursor: pointer;
+      -webkit-appearance: none;
+      margin-top: -.7em;
+    }
 
     #mainNav
     {
@@ -361,15 +409,20 @@ div h2 {
     }
 
     #main-menu {
-        margin-top: 1em;
-        margin-left:1em;
-      }
+      margin-top: 1em;
+      margin-left:1em;
+    }
 
 
       .titleText {
           font-size: 3em;
       }
-
+      .blackOverlay
+       {
+           height: 100%;
+          background:#7f7f7f;
+          background:rgba(0,0,0,0.5);
+        }
       #musArea {
         padding: 0;
         height: 38.125em;
@@ -456,11 +509,11 @@ div h2 {
         font-weight: normal;
       }
 
-      #musImgSec div p {
+      .musImgSec div p {
         font-size: 0.813em;
       }
 
-      #musImgSec img {
+      .musImgSec img {
         border-radius: 4%;
       }
 
@@ -487,12 +540,14 @@ div h2 {
       .orbit-previous, .orbit-next
       {
             top: 30%;
+             background-color:  rgba(0,0,0,0.3);
       }
 
-      .musicSec {
-
+      .musicBtn
+      {
+        background-color:  rgba(255,255,255,0.7);
+        top: 50%;
       }
-
 
       #musText1, #musText2, #musText3, #musText4 {
         padding: 1.250em;
